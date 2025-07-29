@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+
+    font-family: "Montserrat",sans-serif;
+
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.main {
+
+    grid-area: main;
+    
+    /* grid-template-areas: "img-home img-home img-home" 
+    "text-home"; */
+    /* grid-column: 2/5; */
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+  
+    /* justify-content: space-around; */
+    border: 2px solid #222;
+    padding: 0;
+
+}
+
+
+.navbar-custom {
+      background-color:#253C36
+    }
+    .navbar-custom .nav-link,
+    .navbar-custom .navbar-brand {
+      color: #ffffff;
+    }
+    .navbar-custom .nav-link:hover {
+      color: rgb(84, 70, 70);
+    }
+
+
+
+.link:hover{
+color: black;
+
+}
+
+
+.img-car{
+width: 60vw;
+height: auto;
+
+}
+
+/* .link:active{
+color: red;
+
+} */
+
+
+/* a:visited {
+  color: #520d77;
+  text-decoration: none;
+} */
+ 
+
+
+
+.login{
+
+display: flex;
+flex-direction: column;
+justify-content:first baseline;
+align-items:center;
+height: 80vh;
+margin: 20px;
+padding: 20px;
+border: 2px #222;
+
+
+}
+
+.grid-container {
+    display: grid;
+    /*definimos grid*/
+
+    /* grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr; */
+    grid-template-areas:
+        /* armamos la grilla con metodo 2*/
+        "header header header header"
+        "main main main main"
+        "reserva reserva reserva reserva"
+        "footer footer footer footer"
+
+    ;
+
+}
+
+.grid-container2{
+display: grid;
+grid-template-areas: "header header header header" 
+"sidebar main main main" 
+"sidebar main main main" 
+"sidebar footer footer footer" 
+;
+
+}
+.header h1 {
+    display: grid;
+    color: white;
+
+    justify-items: center;
+}
+
+.header {
+
+    grid-area: header;
+display: flex;
+flex-direction: row;
+    /* position:sticky; */
+    width: 100vw;
+    height: 25vh;
+    background-color: #253C36;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    border: 5px 0 #222;
+    
+    
+
+    /* grid-column: 1/5;
+grid-row: 1; */
+
+}
+
+
+/*main query cel*/
+/* @media (max-width: 430px) {
+.main{
+margin-top: 25px;
+flex-direction: column;
+
+} */
+
+
+
+.reserva{
+width: 80vw;
+
+}
+
+.reserva h2{
+justify-content: start;
+font-size: 1rem;
+
+}
+
+.header{
+    width: 100%;
+flex-direction: column;
+}
+.header h1{
+display: none;
+/* font-size: small;
+align-content: flex-start; */
+}
+
+.aside li{
+
+height: auto;
+
+}
+
+
+.aside ul{
+    display: flex;
+gap: 10px;
+font-size: 1rem;
+padding-left: 20px;
+width: 30;
+
+}
+
+.img-home{
+flex-direction: column;
+  width: auto;
+    height: auto;
+    padding-right: 10px;
+    font-size: medium;
+    justify-items: center;
+    align-items:first baseline;
+
+} 
+
+.img-home h2{
+font-size: small;
+
+
+}
+
+.img-home img{
+height: 50vh;
+width: auto;
+}
+
+/* .reserva h2{
+font-size: smaller;
+align-items: flex-start;
+
+} */
+
+
+.reserva{
+flex-direction: column;
+
+}
+
+.footer ul{
+gap: 30px;
+padding-right: 130px;
+justify-content: center;
+}
+
+.footer{
+/* flex-direction: column; */
+font-size: xx-small;
+/* height: auto; */
+/* width: 20vw; */
+}
+
+.footer img{
+height: 30vh;
+width: 30vw;
+
+}
+
+.footer li{
+text-decoration: none;
+list-style: none;
+}
+
+
+/* .nav-bar-text,
+.nav-bar-brand,
+.nav-link{
+    color: rgb(173, 47, 47) !important;
+} */
+
+
+/* .aside {
+    grid-area: sidebar;
+display: flex;
+
+    width: 10vw;
+    height: auto;
+    position:sticky;
+
+    top: 0;
+    background-color: #253C36;
+
+     align-items: center; 
+    
+    width: 20; 
+    
+
+} */
+
+/* .aside ul {
+display: flex;
+flex-direction: column;
+    align-items: center;
+    top: 30px;
+    position: fixed;
+justify-content:flex-start; 
+ list-style: none
+
+
+} */
+
+a {
+    /* display: flex; */
+    text-decoration: none;
+    color: white;
+    font-size: medium;
+   justify-content: center;
+    
+}
+
+
+
+
+.logo1 {
+    display: flex;
+
+    height: 15vh;
+    width: 15vw;
+    width: auto;
+
+}
+
+.img-home {
+background-color:rgb(255, 255, 255);
+     flex-wrap: wrap; 
+    display: flex;
+    max-width: 100%;
+     height: auto; 
+    padding: 20px 20px; 
+     margin: 5px auto; 
+     /* object-fit: cover;  */
+    /* align-items:stretch; */
+    justify-content: center;
+    
+
+}
+
+.img-home img {
+/* object-fit: cover; */
+display: flex;
+    width: 40vw;
+    height: auto;
+    padding-right: 20px;
+
+}
+
+/* .inmimagen {
+
+    display: flex;
+    
+} */
+.img-home h2{
+font-size: 1rem;
+
+
+}
+.img-home p {
+
+    display: flex;
+    height: auto;
+width: 40vw;
+    /* justify-content: center; */
+    font-size: small;
+/* justify-items: stretch; */
+    
+/* bottom: 0;
+padding: 8px 16px;
+background: #222;  */
+
+}
+
+
+
+
+.text-home {
+    grid-area: text-home;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    background-color:darkgray;
+    justify-content:space-between;
+    align-items: center;
+    height: 20vh;
+    width: 100%;
+   
+    
+
+}
+
+.footer img{
+height: 10vh;
+width: 5vw;
+
+}
+
+
+.fijado{
+position: fixed;
+bottom: 20px;
+right: 20px;
+
+}
+
+.fijado img{
+height: 10vh;
+width: 5vw;
+
+}
+
+.reserva{
+grid-area: reserva;
+display: flex;
+    background-color: pink;
+    justify-items: center;
+
+}
+
+.reserva h2{
+    display: flex;
+justify-items: center;
+align-items: center;
+align-content: center;
+color: red;
+}
+
+.img-emergencia{
+display: flex;
+    height: 20vh;
+    width: auto;
+    justify-items:center;
+
+}
+
+.footer ul{
+
+display: flex;
+
+}
