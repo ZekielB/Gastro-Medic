@@ -14,14 +14,15 @@
 .main {
 
     grid-area: main;
-    
+    display: flex;
+flex-direction: column;
     /* grid-template-areas: "img-home img-home img-home" 
     "text-home"; */
     /* grid-column: 2/5; */
     background-color: rgb(255, 255, 255);
-    width: 100vw;
+    width: 80vw;
   
-    /* justify-content: space-around; */
+    justify-content: center;
     border: 2px solid #222;
     padding: 0;
 
@@ -46,10 +47,14 @@ color: black;
 
 }
 
+.carousel-item{
+width: auto;
+height: 60vh;
+}
 
 .img-car{
-width: 60vw;
-height: auto;
+width: 50vw;
+height: 50vh;
 
 }
 
@@ -98,7 +103,7 @@ grid-template-rows: 1fr 1fr 1fr; */
 
 }
 
-.grid-container2{
+/* .grid-container2{
 display: grid;
 grid-template-areas: "header header header header" 
 "sidebar main main main" 
@@ -106,7 +111,7 @@ grid-template-areas: "header header header header"
 "sidebar footer footer footer" 
 ;
 
-}
+} */
 .header h1 {
     display: grid;
     color: white;
@@ -147,7 +152,13 @@ flex-direction: column;
 
 
 .reserva{
-width: 80vw;
+width: 50vw;
+flex-direction: column;
+grid-area: reserva;
+display: flex;
+    background-color: rgb(255, 255, 255);
+    justify-items: center;
+    align-items: center;
 
 }
 
@@ -167,30 +178,30 @@ display: none;
 align-content: flex-start; */
 }
 
-.aside li{
+/* .aside li{
 
 height: auto;
 
-}
+} */
 
 
-.aside ul{
+/* .aside ul{
     display: flex;
 gap: 10px;
 font-size: 1rem;
 padding-left: 20px;
 width: 30;
 
-}
+} */
 
 .img-home{
+    display: flex;
 flex-direction: column;
   width: auto;
     height: auto;
     padding-right: 10px;
     font-size: medium;
-    justify-items: center;
-    align-items:first baseline;
+    align-items: center;
 
 } 
 
@@ -205,17 +216,9 @@ height: 50vh;
 width: auto;
 }
 
-/* .reserva h2{
-font-size: smaller;
-align-items: flex-start;
-
-} */
 
 
-.reserva{
-flex-direction: column;
 
-}
 
 .footer ul{
 gap: 30px;
@@ -393,21 +396,18 @@ width: 5vw;
 
 }
 
-.reserva{
-grid-area: reserva;
-display: flex;
-    background-color: pink;
-    justify-items: center;
+/* .reserva{
 
-}
 
-.reserva h2{
+} */
+
+/* .reserva h2{
     display: flex;
 justify-items: center;
 align-items: center;
 align-content: center;
-color: red;
-}
+color: rgb(111, 21, 21);
+} */
 
 .img-emergencia{
 display: flex;
