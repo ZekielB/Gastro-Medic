@@ -3,37 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/estilos.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
     <title>GM - Sobre Nosotros</title>
 
 </head>
-<body>
+<body class="grid-container">
     
- <header>
-    <a href="../../index.html">
-        <img class="logo1" src="../img/logo1.jpg" width="200" height="200" alt="logo">
+
+    <header class="header">
+        <img class="logo1" src="../img/logo1.jpg" alt="logo">
         
-</a>
-        <nav>
-            <ul>
-               <li><a href="./galeria.html">Galeria</a></li>
-                <li><a href="./sobre-nosotros.html">Sobre Nosotros</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./zona-pacientes.html"> Zona pacientes </a></li>
-                <li><a href="../../index.html"> Home</a></li>
-            </ul>
+     <nav class="navbar navbar-expand-lg navbar-custom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="../../index.html">Gastro Medic</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/galeria.html">Galeria</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/zona-pacientes.html">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="..//pages/sobre-nosotros.html">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/profesionaleslogin.html">Profesionales</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-        </nav>
-
-    </header>
+</header>
 
 
 
-<main>
+
+<main class="main">
+    <section class="historia-de">
 <h1> Quienes somos</h1>
-<img class="imagengaleria" src="..//img/Gastroenterologia.webp" alt="">
+<img class="img-historia" src="..//img/Gastroenterologia.webp" alt="">
 
-<p class="parrafo">Fundada en 1998, nuestra clínica se especializa en brindar atención integral en gastroenterología. Contamos con un equipo multidisciplinario de profesionales altamente capacitados y tecnología de última generación. Realizamos consultas, estudios endoscópicos diagnósticos y terapéuticos, atención de urgencias y un enfoque personalizado para cada paciente.</p>
+<p>Fundada en 1998, nuestra clínica se especializa en brindar atención integral en gastroenterología. Contamos con un equipo multidisciplinario de profesionales altamente capacitados y tecnología de última generación. Realizamos consultas, estudios endoscópicos diagnósticos y terapéuticos, atención de urgencias y un enfoque personalizado para cada paciente.</p>
 
 <h2>Profesionales</h2>
 
@@ -46,17 +67,16 @@
 
 
 </ul>
+</section>
+
 
 </main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 
-</body>
+<footer class="footer">Derechos reservados ezeDev 2025
 
-
-<footer class="firma"><h2>Diseñado por Ezeqien 2025</h2> </footer>
-
-<nav><ul>
-<footer>
-  <li>
+ <ul>
+    <li>
         <a href="https://www.instagram.com/" target="_blank">
         <img src="../img/Instagram_logo_2016.svg.png" alt="ig" height="100" width="100">
         </a>
@@ -70,12 +90,22 @@
 
         <li>
         <a href="https://www.facebook.com/"target="_blank">
-        <img src="../img/2023_Facebook_icon.svg.png" alt="ig" height="100" width="100">
+        <img src="..//img/2023_Facebook_icon.svg.png" alt="ig" height="100" width="100">
         </a>
     </li>
+</ul>
 
 
-</ul></nav>
-</footer>
+
+  </footer>
+<div class="fijado">
+    <img src="../img/WhatsApp.svg.png" alt="bot">
+</div>
+
+
+</body>
+
+
+
 
 </html>

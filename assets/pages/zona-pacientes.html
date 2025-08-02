@@ -3,76 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
     <title>GM - Zona pacientes</title>
 </head>
-<body class="grid-container2">
-     <header class="header">
-      <img class="logo1" src="../img/logo1.jpg" alt="logo">
-      <h1>Bienvenido a Clinica Gastro Medic</h1>
-            
-<!-- 
-        <nav>
-            <ul>
-                 <li><a href="./galeria.html">Galeria</a></li>
-                <li><a href="./sobre-nosotros.html">Sobre Nosotros</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./zona-pacientes.html"> Zona pacientes </a></li>
-                <li><a href="../../index.html"> Home</a></li>
-            </ul>
 
-        </nav> -->
-    </header>
-
-    <aside class="aside">
-
-  <ul>
-               
-        <li><a href="./assets/pages/zona-pacientes.html">Zona pacientes</a></li>
-        <li><a href="./assets/pages/sobre-nosotros.html">Nosotros</a></li>
-        <li><a href="./assets/pages/galeria.html">Profesionales</a></li>
-        <li><a href="./assets/pages/contacto.html">Contacto</a></li>
-        <li><a href="./index.html"> Home</a></li>
-        
+<body class="grid-container">
+  
+  
+    <header class="header">
         <img class="logo1" src="../img/logo1.jpg" alt="logo">
-     </ul>
+        
+     <nav class="navbar navbar-expand-lg navbar-custom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="../../index.html">Gastro Medic</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/galeria.html">Galeria</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/zona-pacientes.html">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="..//pages/sobre-nosotros.html">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/profesionaleslogin.html">Profesionales</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-    </aside>
-
-
+</header>
 
 <main class="main">
 
-    <div>
+    <section class="eleccion_profesional">
 <h1>Zona Pacientes</h1>
-<h2>Elija su profesional de salud, que obra social posee y la fecha disponible</h3>
-<h2>1.Seleccione su medico</h2>
-<input type="radio" name="obra" id="obra">Gomez, Javier <br>
-<input type="radio" name="obra" id="obra">richardson, gustav <br>
-<input type="radio" name="obra" id="obra">Beltrame, Maria <br>
-<input type="radio" name="obra" id="obra">Azcuenaga, Rolando <br>
-</div>
 
-<div>
+<h2>1.Seleccione su Médico</h2>
+
+
+
+<label for="cars">Apellidos</label>
+<select id="cars" name="cars">
+  <option value="volvo">Gomez, Javier</option>
+  <option value="saab">Richards, Keith</option>
+  <option value="fiat">Mercedes Sora</option>
+  <option value="audi">Matienzo, Rolando</option>
+</select>
+
 <h2>2.Elija su obra social o si es particular, luego la fecha disponible</h2>
 <form>
 <input type="radio" name="obra" id="obra">Obra social <input type="radio" name="obra" id="obra"> Particular 
 
 <br>
 <input type="datetime-local" name="fecha" id="fecha">
-<input type="button" value="OK">
+<input type="button" value="OK" onclick="alert('SU TURNO HA SIDO PROCESADO, QUE TENGA BUEN DIA')"></button>
+
 </form>
-</div>
+
+
+<h2 class="h2-tutorial"> Si necesita ayuda puede ver este video</h2>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YBuz5AkTxzo?si=_ZYxG3iIVh_9Z6OK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</section>
+
+
+
+
 
 </main>
 
-</body>
+<div class="reserva">
+
+    <h2>SERVICIO DE EMERGENCIAS 24/7</h2> 
+   <a href="https://wa.me/5491112345678?text=Quiero%20más%20información">  
+    
+    <img class="img-emergencia" src="../img/24hs.png" alt=""> 
+
+
+</a>
+    
+</div>
 
  
 
-<nav class="footer">
-    <footer >Derechos reservados ezeDev 2025
-    <ul>
+<footer class="footer">Derechos reservados ezeDev 2025
+
+ <ul>
     <li>
         <a href="https://www.instagram.com/" target="_blank">
         <img src="../img/Instagram_logo_2016.svg.png" alt="ig" height="100" width="100">
@@ -87,11 +115,18 @@
 
         <li>
         <a href="https://www.facebook.com/"target="_blank">
-        <img src="../img/2023_Facebook_icon.svg.png" alt="ig" height="100" width="100">
+        <img src="..//img/2023_Facebook_icon.svg.png" alt="ig" height="100" width="100">
         </a>
     </li>
 </ul>
-</footer>
-</nav>
 
+
+
+  </footer>
+<div class="fijado">
+    <img src="../img/WhatsApp.svg.png" alt="bot">
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+</body>
 </html>

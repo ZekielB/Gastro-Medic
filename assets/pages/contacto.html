@@ -4,91 +4,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/estilos.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
     <title>GM - Contacto</title>
 </head>
 
-<body>
+<body class="grid-container">
 
-    <header>
-        <a href="../../index.html">
-            <img class="logo1" src="../img/logo1.jpg" width="200" height="200" alt="logo">
+ <header class="header">
+        <img class="logo1" src="../img/logo1.jpg" alt="logo">
+        
+     <nav class="navbar navbar-expand-lg navbar-custom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="../../index.html">Gastro Medic</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/galeria.html">Galeria</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/zona-pacientes.html">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/sobre-nosotros.html">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/profesionaleslogin.html">Profesionales</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+      
 
-        </a>
-
-        <nav>
-            <ul>
-                <li><a href="./galeria.html">Galeria</a></li>
-                <li><a href="./sobre-nosotros.html">Sobre Nosotros</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./zona-pacientes.html"> Zona pacientes </a></li>
-                <li><a href="../../index.html"> Home</a></li>
-            </ul>
 
 
+</header>
 
-        </nav>
-
-
-    </header>
-
-    <main>
+    <main class="main">
+       
+       <section class="contacto">
         <H1>Contacto</H1>
 
-        <img class="contactoimg" src="../img/callcenter.jpg" alt="chica">
+        <img class="contacto-img" src="../img/callcenter.jpg" alt="chica">
 
         <form action="/submit" method="post">
 
             <label for="mensaje">Mensaje</label>
             <textarea name="mensaje" id="mensaje"></textarea>
-            <br>
-            <br>
+      
             <label for="email">Email</label>
             <input type="email" name="email" id="mail">
             <input type="submit" value="Enviar">
-
-            <h2>Contactese por telefono al "0800-dontdie-8882" o deje un mensaje</h2>
-
+        </form>
+ <h2>Contactese por telefono al "0800-dontdie-8882" o deje un mensaje</h2>
+        
             <h3>Nuestra direccion es Gdor barreyro 1040</h3>
 
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d884.8711017471477!2d-55.123592119230125!3d-27.48530666065722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f8f5388bf2b99f%3A0xc27808ed0ce83a3f!2sTomografia!5e0!3m2!1ses!2sar!4v1751290100659!5m2!1ses!2sar"
                 width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
 
-
-        </form>
 
     </main>
+
+  <footer class="footer">Derechos reservados ezeDev 2025
+
+ <ul>
+    <li>
+        <a href="https://www.instagram.com/" target="_blank">
+        <img src="../img/Instagram_logo_2016.svg.png" alt="ig" height="100" width="100">
+        </a>
+    </li>
+
+        <li>
+        <a href="https://www.x.com/"  target="_blank">
+        <img src="../img/xlogo.jpg" alt="ig" height="100" width="100" >
+        </a>
+    </li>
+
+        <li>
+        <a href="https://www.facebook.com/"target="_blank">
+        <img src="../img/2023_Facebook_icon.svg.png" alt="ig" height="100" width="100">
+        </a>
+    </li>
+</ul>
+
+  </footer>
+
+<div class="fijado">
+    <img src="../img/WhatsApp.svg.png" alt="bot">
+
+
+</div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
 </body>
-<footer class="firma">
-    <h2>Diseñado por Ezeqien 2025</h2>
-</footer>
 
-<nav>
-    <ul>
-        <footer>
-            <li>
-                <a href="https://www.instagram.com/" target="_blank">
-                    <img src="../img/Instagram_logo_2016.svg.png" alt="ig" height="100" width="100">
-                </a>
-            </li>
-
-            <li>
-                <a href="https://www.x.com/" target="_blank">
-                    <img src="../img/xlogo.jpg" alt="ig" height="100" width="100">
-                </a>
-            </li>
-
-            <li>
-                <a href="https://www.facebook.com/" target="_blank">
-                    <img src="../img/2023_Facebook_icon.svg.png" alt="ig" height="100" width="100">
-                </a>
-            </li>
-
-
-    </ul>
-</nav>
-</footer>
 
 </html>
