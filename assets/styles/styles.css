@@ -11,18 +11,7 @@
 }
 
 
-.historia-de{
-display: flex;
-flex-direction: column;
-align-items: center;
 
-}
-
-.img-historia{
-width: 30vw;
-height: auto;
-
-}
 /* --------------------------------------------MAIN---------------------- */
 .main {
 
@@ -49,7 +38,7 @@ height: auto;
 }
 
 .navbar-custom .nav-link:hover {
-    color: rgb(84, 70, 70);
+    color: rgb(234, 204, 7);
 }
 
 /* ------------------------##CARROUSEL## */
@@ -68,20 +57,49 @@ height: auto;
 
 
 /* ----------------PSEUDO CLASES---------------------- */
-a:visited {
-  color: #520d77;
-  text-decoration: none;
+
+.link{
+text-decoration: none;
+
 }
 
+.link:visited{
+
+    color: blueviolet;
+}
+
+
 .link:active{
-color: red;
+color:aqua;
 
 } 
 
 .link:hover {
-    color: black;
+    color: white;
+    background-color:#253C36;
 
 }
+
+/* ------------------option, select , chcked-------------------------- */
+
+option:checked{
+color: brown;
+
+}
+
+select:hover{
+
+   background-color: olivedrab;
+}
+
+.red:focus{
+background-color: brown;
+color: white;
+
+
+}
+
+
 
 /* -----------------------------------PAGINA LOGIN MEDICOS------------------------- */
 
@@ -100,7 +118,7 @@ color: red;
 }
 
 
-
+/* -----------------------------------------CLASE GRID---------------------------------- */
 
 .grid-container {
     display: grid;
@@ -429,7 +447,7 @@ width: 10vw;
 
 
 
-/* ----------------------------------------------------FOOTER------------------------------------------------- */
+
 /* PAGINA CONTACTO -------------------------------------------- */
 
 .contacto{
@@ -485,9 +503,22 @@ a {
 
 }
 
+/* ----------------------------------------------SOBRE NOSOTROS------------------------ */
 
+.historia-de{
+display: flex;
+flex-direction: column;
+align-items: center;
 
+}
 
+.img-historia{
+width: 30vw;
+height: auto;
+
+}
+
+/* --------------------------------------FIXED--------------------- */
 
 .fijado {
     position: fixed;
@@ -502,18 +533,7 @@ a {
 
 }
 
-/* .reserva{
 
-
-} */
-
-/* .reserva h2{
-    display: flex;
-justify-items: center;
-align-items: center;
-align-content: center;
-color: rgb(111, 21, 21);
-} */
 
 .img-emergencia {
     display: flex;
