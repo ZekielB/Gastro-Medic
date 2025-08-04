@@ -266,6 +266,15 @@ width: 80vw;
 
 }
 
+.img-emergencia {
+    display: flex;
+    height: 20vh;
+    width: auto;
+    justify-items: center;
+
+}
+
+
 .header {
     width: 100%;
     flex-direction: column;
@@ -422,6 +431,7 @@ width: 20vw;
 }
 
 .footer ul {
+    display: flex;
     gap: 30px;
     padding-right: 130px;
     justify-content: center;
@@ -431,7 +441,6 @@ width: 20vw;
     text-decoration: none;
     list-style: none;
 }
-
 
 
 
@@ -471,7 +480,7 @@ height: auto;
 }
 
 
-
+/* ----------------------------------------------------varios---------------------------- */
 
 a {
     /* display: flex; */
@@ -483,7 +492,7 @@ a {
 }
 
 
-
+/* ## LOGO ## */
 
 .logo1 {
     display: flex;
@@ -535,16 +544,5 @@ height: auto;
 
 
 
-.img-emergencia {
-    display: flex;
-    height: 20vh;
-    width: auto;
-    justify-items: center;
 
-}
 
-.footer ul {
-
-    display: flex;
-
-}
