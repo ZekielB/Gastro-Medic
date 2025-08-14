@@ -1,0 +1,57 @@
+@use "variables" as v;
+
+*{
+
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: v.$primary-color;
+   
+    display: flex;
+    flex-direction: row;
+    position:sticky; 
+    height: 25vh;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    
+    .logo1{
+    display: flex;
+    height: 15vh;
+    width: auto;
+    }
+    
+    .header h1{
+    color: white;
+    justify-items: center;
+    }
+
+}
+.navbar-custom {
+    background-color: #253C36
+}
+.navbar-custom .nav-link,
+.navbar-custom .navbar-brand {
+    color: #ffffff;
+}
+.navbar-custom .nav-link:hover {
+    color: rgb(234, 204, 7);
+}
+
+
+@include v.mobile{
+
+     .header{
+
+        
+        display: flex;
+    flex-direction: column;
+
+     }
+
+     
+}

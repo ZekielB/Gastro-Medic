@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+$fuente: "Montserrat", sans-serif;
+$primary-color: #253C36;
+$secondary-color:black;
+$background-color:rgb(216, 205, 186);
+$border: 2px solid #000000;
+
+@mixin mobile{
+@media (max-width:430px) {
+    @content
+}
+}
+

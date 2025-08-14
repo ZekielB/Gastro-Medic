@@ -1,0 +1,112 @@
+@use "variables" as v;
+@use "animations";
+
+*{
+
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.main_container{
+
+            display: flex;
+            // // // grid-template-areas: 
+            // // // // "img1 publi1"
+            // // // // "img2 publi2"
+            
+            flex-flow: column;
+            background-color: v.$background-color;
+            align-items: center;
+            justify-items: center;
+            justify-content:center;
+            align-content: space-around;
+            padding: 10px;
+            height: auto;
+            
+           
+            border: v.$border;
+     .portada{
+
+        width: 50vw;
+        height: 50vh;
+     }
+            img{
+                width: 30vw;
+                height:40vh;
+                border-radius: 15px;
+
+            }
+
+            
+.imagenes-inicio{
+display: flex;
+align-items: center;
+}
+
+h2{
+    font-size: 1rem;
+}
+
+p{
+    font-size: 0.3rem;
+}
+            
+
+
+
+
+
+}
+
+        .reserva{
+            display: flex;
+            flex-direction: column;
+            grid-area: reserva;
+            background-color: v.$background-color;
+            width: 100vw;
+            justify-items: center;
+            justify-content: center;
+            align-items: center;
+            border: v.$border;
+
+        h2{
+            font-size: 2rem;
+            color: red;
+    }
+
+
+
+}
+    .fijado{
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    @extend %vibrar;
+        img {
+            height: 10vh;
+            width: 5vw;
+
+}
+
+}
+
+.animate__heartBeat{
+
+        display: inline-block;
+        margin: 0 0.5rem;
+        animation: heartBeat 8s infinite;
+        animation-duration: 8s; 
+        --animate-repeat:infinite;
+        display: flex;
+        height: 20vh;
+        width: auto;
+        justify-items: center;
+
+
+}
+
+
