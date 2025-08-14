@@ -1,6 +1,6 @@
 @use "variables" as v;
 @use "animations";
-
+@use "footer";
 *{
 
     font-family: "Montserrat", sans-serif;
@@ -13,65 +13,81 @@
 .main_container{
 
             display: flex;
-            // // // grid-template-areas: 
-            // // // // "img1 publi1"
-            // // // // "img2 publi2"
-            
             flex-flow: column;
             background-color: v.$background-color;
             align-items: center;
             justify-items: center;
             justify-content:center;
             align-content: space-around;
-            padding: 10px;
+            padding: 15px;
             height: auto;
-            
-           
+            gap: 10px;
             border: v.$border;
+
+
      .portada{
+            gap: 20px;
+            width: 60vw;
+            height: 60vh;
 
-        width: 50vw;
-        height: 50vh;
+
      }
-            img{
-                width: 30vw;
-                height:40vh;
-                border-radius: 15px;
-
+    .sibo{
+                gap: 20px;
+                width: 40vw;
+                height:60vh;
+                
             }
 
             
-.imagenes-inicio{
-display: flex;
-align-items: center;
-}
+
 
 h2{
-    font-size: 1rem;
+    font-size: 2rem;
+    text-decoration: underline;
 }
 
-p{
-    font-size: 0.3rem;
+.parrafo{
+    font-size: 1rem;
+    height: 40vh;
+    width: 40vw;
+     
 }
             
 
 
 
 
+
+}
+
+
+.publicidad{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-flow: row;
+background-color: v.$background-color;
+ 
+
+                
+ .img-publicidad{
+                width: 15vw;
+                height:auto;
+                 
+    
+ }
 
 }
 
         .reserva{
             display: flex;
             flex-direction: column;
-            grid-area: reserva;
             background-color: v.$background-color;
-            width: 100vw;
             justify-items: center;
             justify-content: center;
             align-items: center;
             border: v.$border;
-
         h2{
             font-size: 2rem;
             color: red;
@@ -108,5 +124,53 @@ p{
 
 
 }
+
+@include v.mobile{
+.main_container{
+    
+    
+    .portada{
+width: 70vw;
+            height: auto;
+            padding-left: 30px;
+
+    } 
+
+    .sibo{
+        width: 50vw;
+        height: auto;
+    }
+}
+
+.publicidad{
+height: 50vh;
+width: auto;
+    flex-flow: column;
+.img-publicidad{
+    height: 15vh;
+    width: auto;
+}
+
+}
+
+
+.fijado{
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    .img-fijado{
+height: 10vh;
+width: 15vw;
+
+    }
+
+}
+
+
+}
+
+
+
 
 

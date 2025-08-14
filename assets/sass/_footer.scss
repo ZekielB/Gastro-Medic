@@ -18,7 +18,7 @@ height: 10vh;
 ul{
 display: flex;
     gap: 30px;
-    padding-right: 130px;
+    // padding-right: 130px;
     justify-content: center;
 li{
     display: flex;
@@ -33,9 +33,15 @@ list-style: none;
 }
 
 @include v.mobile{
-.footer img{
+.footer {
+
+
+
+
+img{
 height: auto;
 width: 10vw;
+}
 }
 
 }
