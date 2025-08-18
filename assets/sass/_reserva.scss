@@ -1,0 +1,26 @@
+@use "variables" as v;
+
+.reserva{
+            display: flex;
+            flex-direction: column;
+            background-color: v.$background-color;
+            justify-items: center;
+            justify-content: center;
+            align-items: center;
+            border: v.$border;
+        .img-emergencia{
+            display: flex;
+            height: 20vh;
+            width: 100%;  //que ocupe todo el ancho disponible
+            justify-items: center;
+
+        }
+        
+            h2{
+            font-size: 2rem;
+            color: red;
+    }
+
+
+
+}

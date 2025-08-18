@@ -37,3 +37,18 @@ transform: translate(0);
         justify-items: center;
 
 }
+
+.animate__heartBeat{
+
+        display: inline-block;
+        margin: 0 0.5rem;
+        animation: heartBeat 8s infinite;
+        animation-duration: 8s; 
+        --animate-repeat:infinite;
+        display: flex;
+        height: 20vh;
+        width: auto;
+        justify-items: center;
+
+
+}

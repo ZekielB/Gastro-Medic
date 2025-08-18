@@ -1,95 +1,73 @@
 @use "variables" as v;
 @use "animations";
+@use "footer";
 
 
+
+                
 .main-gallery{
-
-display: grid;
-grid-template-areas:
-"maq med cli "
-"ca pepe que"
-
-        ;
-        gap: 30px;
-        justify-content: space-around;
-        justify-items: center;
-        
-
-        img{
-                width: 30vw;
-                height:auto;
-                border-radius: 15px;
-
-
-        }
-
-        .maq{
-
-        grid-area: maq;
-
-        }
-
-        .med{
-        grid-area: med;
-
-        }
-
-        .cli{
-        grid-area: cli;
-
-        }
-
-
-        .ca{
-        grid-area: ca;
-
-        }
-
-        .co{
-        grid-area: co;
-
-        }
-
-.que{
-
-        grid-area: que;
+                        grid-template-columns: repeat(3, 1fr);        
+                        display: grid;
+                        grid-template-areas:
+                        "maq med cli" 
+                        "que pepe ca";
+                        gap: 1rem;
+      
+        @include v.mobile{
+        grid-template-columns: 1fr;     
+        grid-template-areas: 
+        "maq"
+        "med"
+        "cli"
+        "que"
+        "pepe"
+        "ca";         
 }
 
-.pepe{
-        grid-area: pepe;
-        background-color: v.$primary-color;
-        color: v.$background-color;
-        border-radius: 15px;
 
-}
+                        img{
+                                width: 100%;         // que ocupe todo el ancho disponible
+                                height: 100%;        // rellena el contenedor
+                                object-fit: cover;   // recorta sin deformar
+                                border-radius: 12px; // esquinas redondeadas
+                                box-shadow: 0 2px 8px rgba(0,0,0,.1);
+                                display: block;
 
-}
+                                
+                        }
 
-.animate__heartBeat{
+                        .maq{
+                        grid-area: maq;
+                        }
+                        .med{
+                        grid-area: med;
+                        }
+                        .cli{
+                        grid-area: cli;
+                        }
+                        .ca{
+                        grid-area: ca;
+                        }
+                        .que{
+                                grid-area: que;
+                        }
+                        .pepe{
+                                grid-area: pepe;
+                                background-color: v.$primary-color;
+                                color: v.$background-color;
+                                border-radius: 5px;
+                        }
 
-        display: inline-block;
-        margin: 0 0.5rem;
-        animation: heartBeat 8s infinite;
-        animation-duration: 8s; 
-        --animate-repeat:infinite;
-        display: flex;
-        height: 20vh;
-        width: auto;
-        justify-items: center;
+
+     
+
 
 
 }
 
-.fijado{
-    display: flex;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    @extend %vibrar;
-        img {
-            height: 10vh;
-            width: 5vw;
-}
 
-}
+
+
+
+
      

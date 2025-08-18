@@ -1,6 +1,7 @@
 @use "variables" as v;
 @use "animations";
 @use "footer";
+@use "reserva";
 *{
 
     font-family: "Montserrat", sans-serif;
@@ -20,43 +21,45 @@
             justify-content:center;
             align-content: space-around;
             padding: 15px;
-            height: auto;
-            gap: 10px;
             border: v.$border;
 
 
-     .portada{
+    .portada{
             gap: 20px;
             width: 60vw;
-            height: 60vh;
+            height: 70vh;
 
 
      }
+
+     .titulo_main{
+    font-size: 4rem;
+    text-decoration: underline;
+    text-align: center;
+}
     .sibo{
-                gap: 20px;
-                width: 40vw;
-                height:60vh;
+                height: 60vh;
+                width: auto;
+                
+                font-size: 2rem;
                 
             }
 
-            
-
-
-h2{
-    font-size: 2rem;
-    text-decoration: underline;
-}
-
-.parrafo{
+    .parrafo{
     font-size: 1rem;
     height: 40vh;
     width: 40vw;
+
+    h3{
+text-align: center;
+
+    }
      
 }
             
 
 
-
+    
 
 
 }
@@ -80,22 +83,7 @@ background-color: v.$background-color;
 
 }
 
-        .reserva{
-            display: flex;
-            flex-direction: column;
-            background-color: v.$background-color;
-            justify-items: center;
-            justify-content: center;
-            align-items: center;
-            border: v.$border;
-        h2{
-            font-size: 2rem;
-            color: red;
-    }
-
-
-
-}
+        
     .fijado{
     display: flex;
     position: fixed;
@@ -128,7 +116,10 @@ background-color: v.$background-color;
 @include v.mobile{
 .main_container{
     
-    
+    .titulo_main{
+
+        font-size: 2rem;
+    }
     .portada{
 width: 70vw;
             height: auto;
@@ -147,7 +138,7 @@ height: 50vh;
 width: auto;
     flex-flow: column;
 .img-publicidad{
-    height: 15vh;
+    height: 10vh;
     width: auto;
 }
 
@@ -160,7 +151,7 @@ width: auto;
     bottom: 20px;
     right: 20px;
     .img-fijado{
-height: 10vh;
+height: 8vh;
 width: 15vw;
 
     }
