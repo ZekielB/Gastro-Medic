@@ -1,0 +1,41 @@
+@use "variables" as v;
+@use "header";
+@use "footer";
+@use "home";
+
+.historia-de{
+display: flex;
+flex-direction: column;
+align-items: center;
+
+
+
+    .img-historia{
+        width: 50vw;
+        height: auto;
+}
+
+@include v.mobile {
+
+.img-historia{
+        width: 100%;
+        height: auto;
+}
+
+
+
+//     .fijado{
+//     display: flex;
+//     position: fixed;
+//     bottom: 20px;
+//     right: 20px;
+//     .img-fijado{
+// height: 8vh;
+// width: 20vw;
+
+//     }
+
+// }
+}
+
+}

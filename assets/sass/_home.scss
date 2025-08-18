@@ -23,27 +23,20 @@
             padding: 15px;
             border: v.$border;
 
-
-    .portada{
+                                            ///// imagen portada
+    .portada {
             gap: 20px;
             width: 60vw;
             height: 70vh;
-
-
-     }
-
-     .titulo_main{
-    font-size: 4rem;
-    text-decoration: underline;
-    text-align: center;
-}
-    .sibo{
-                height: 60vh;
-                width: auto;
-                
-                font-size: 2rem;
-                
-            }
+        }
+         .titulo_main {
+             font-size: 4rem;
+             text-decoration: underline;
+             text-align: center;}
+        .sibo {
+            height: 60vh;
+            width: auto;
+            font-size: 2rem; }
 
     .parrafo{
     font-size: 1rem;
@@ -54,14 +47,7 @@
 text-align: center;
 
     }
-     
 }
-            
-
-
-    
-
-
 }
 
 
@@ -71,10 +57,8 @@ align-items: center;
 justify-content: center;
 flex-flow: row;
 background-color: v.$background-color;
- 
-
                 
- .img-publicidad{
+    .img-publicidad{
                 width: 15vw;
                 height:auto;
                  
@@ -83,16 +67,19 @@ background-color: v.$background-color;
 
 }
 
-        
+                         /////// Whatsap fijado 
     .fijado{
     display: flex;
     position: fixed;
     bottom: 20px;
     right: 20px;
     @extend %vibrar;
-        img {
+
+
+        .img-fijado {
             height: 10vh;
             width: 5vw;
+
 
 }
 
@@ -143,20 +130,20 @@ width: auto;
 }
 
 }
-
-
-.fijado{
+   .fijado{
     display: flex;
     position: fixed;
     bottom: 20px;
     right: 20px;
-    .img-fijado{
-height: 8vh;
-width: 15vw;
 
+        .img-fijado{
+                height: 5vh;
+                width: 10vw;
     }
 
 }
+
+
 
 
 }
