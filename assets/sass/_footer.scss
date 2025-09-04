@@ -16,6 +16,23 @@ height: 10vh;
     width: 5vw;
 }
 
+.fa-instagram{
+
+    font-size: 80px;
+}
+
+.fa-x-twitter{
+
+    font-size: 80px;
+}
+
+
+.fa-facebook{
+
+    font-size: 80px;
+
+}
+
 ul{
 display: flex;
     gap: 30px;
@@ -36,13 +53,31 @@ list-style: none;
 @include v.mobile{
 .footer {
 
+.fa-instagram{
 
-
-
-img{
-height: auto;
-width: 10vw;
+    font-size: 25px;
 }
+
+.fa-x-twitter{
+
+    font-size: 25px;
+}
+
+
+.fa-facebook{
+
+    font-size: 25px;
+
+}
+
+
+//  img{
+//  height: auto;
+// width: 5vw;
+// }
+
+
+
 }
 
 }
